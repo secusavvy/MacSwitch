@@ -1,6 +1,6 @@
 # MacSwitch
 
-**MacSwitch** is a Python script that allows you to easily change the MAC address of a network interface on Linux systems. This tool can be useful for privacy enhancement, network management, or testing purposes.
+**MacSwitch** script that allows you to easily change the MAC address of a network interface on Linux systems. This tool can be useful for privacy enhancement, network management, or testing purposes.
 
 ### Features
 - Change the MAC address of a specified network interface.
