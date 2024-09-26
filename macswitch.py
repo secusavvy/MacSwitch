@@ -3,8 +3,19 @@
 import subprocess
 import argparse
 
+asciiart = r"""
+___  ___           _____          _ _       _     
+|  \/  |          /  ___|        (_) |     | |    
+| .  . | __ _  ___\ `--.__      ___| |_ ___| |__  
+| |\/| |/ _` |/ __|`--. \ \ /\ / / | __/ __| '_ \ 
+| |  | | (_| | (__/\__/ /\ V  V /| | || (__| | | |
+\_|  |_/\__,_|\___\____/  \_/\_/ |_|\__\___|_| |_|
+                                                  
+"""
+
 def change_mac(interface, new_mac):
     try:
+        print(asciiart)
         print(f"[+] Changing MAC Address for {interface} to {new_mac}")
         subprocess.check_call(["ifconfig", interface, "down"])
         subprocess.check_call(["ifconfig", interface, "hw", "ether", new_mac])
